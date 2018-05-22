@@ -1,3 +1,6 @@
-module.export = {
-    "testEnvironment": "node"
+module.exports = {
+    testEnvironment: 'node',
+    moduleNameMapper: {
+        '\\.css$': require.resolve('./test/style-mock')
+    }
 };
